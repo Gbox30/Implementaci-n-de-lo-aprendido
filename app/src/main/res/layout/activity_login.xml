@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Pink"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiaVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiaHorizontal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.39" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiaHorizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Perritos"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@id/guiaHorizontal1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.32" />
+
+    <ImageView
+        android:id="@+id/perrito"
+        android:layout_width="433dp"
+        android:layout_height="364dp"
+        android:layout_marginTop="dp"
+        android:layout_marginEnd="92dp"
+        android:rotationX="-8"
+        android:src="@drawable/chocoyo"
+        app:layout_constraintEnd_toEndOf="@id/guiaVertical2"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintTop_toTopOf="@id/guiaHorizontal"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/textViewperrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="224dp"
+        android:text="Nombre del perrito"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/guiaVertical1"
+        app:layout_constraintTop_toTopOf="@id/guiaHorizontal2" />
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="148dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/guiaVertical1"
+        app:layout_constraintTop_toBottomOf="@id/textViewperrito"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <TextView
+        android:id="@+id/textViewRaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="344dp"
+        android:text="Raza"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/guiaVertical1"
+        app:layout_constraintTop_toBottomOf="@id/editTextUsuario" />
+
+    <EditText
+        android:id="@+id/editTextRaza"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="148dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/guiaVertical1"
+        app:layout_constraintTop_toBottomOf="@id/textViewRaza"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <TextView
+        android:id="@+id/textViewEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="340dp"
+        android:text="Edad"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/guiaVertical1"
+        tools:layout_editor_absoluteY="557dp" />
+
+    <EditText
+        android:id="@+id/editEdad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/guiaVertical1"
+        app:layout_constraintTop_toBottomOf="@id/textViewEdad"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <TextView
+        android:id="@+id/textViewSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="344dp"
+        android:text="Sexo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/guiaVertical1"
+        app:layout_constraintTop_toBottomOf="@id/editEdad" />
+
+    <EditText
+        android:id="@+id/editSexo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/guiaVertical1"
+        app:layout_constraintTop_toBottomOf="@id/textViewSexo"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="106dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/white"
+        android:text="Registrar"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editSexo"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
